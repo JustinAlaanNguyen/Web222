@@ -1,0 +1,188 @@
+<!--VIDEO HERE: https://youtu.be/-73P47o03tA-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/dd1873a162.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Who Am I?</title>
+    <!--css files-->
+    <link rel="stylesheet" href="./css/customization.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a76c904191.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>I'm Justin Alaan-Nguyen.</h1>
+      <div id="profile_pic"></div>
+      <p class="titles">Web Developer, Software Engineer</p>
+      <div>
+        <nav id="menu">
+          <a
+            id="resume_button"
+            href="Justin Alaan-Nguyen's Resume.pdf"
+            download
+          >
+            <i class="fa-solid fa-download"></i>&nbspResume
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="infographic"><div id="basic_info"></div></div>
+      <div id="education"><i class="fa-solid fa-user-graduate fa-7x"></i></div>
+      <div id="skills"></div>
+
+      <!--contact me-->
+      <div id="contact_me">
+        <form action="https://httpbin.org/post" method="post" id="contact_form">
+          <fieldset class="fieldset">
+            <legend class="contact_legend">
+              <i class="fa-solid fa-comment"></i> CONTACT ME
+              <i class="fa-solid fa-reply"></i>
+            </legend>
+            <br />
+            <span>Name:</span> <br />
+            <input
+              type="text"
+              name="Name"
+              class="input_text"
+              placeholder="Enter Name"
+              required="true"
+            /><br />
+            <br />
+            <span>Email:</span> <br />
+            <input
+              type="email"
+              name="Email"
+              class="input_text"
+              placeholder="Enter Email"
+            />
+            <br /><br />
+            <span>Street Address:</span> <br />
+            <input
+              type="text"
+              name="Address"
+              class="input_text"
+              placeholder="Enter Address"
+              required="true"
+            /><br />
+            <br />
+            <span>City:</span>
+            <br />
+            <input
+              type="text"
+              name="City"
+              class="input_text"
+              placeholder="Enter City"
+              required="true"
+            /><br />
+            <br />
+            <label for="Provinces"><span>Province:</span></label> <br />
+            <input list="prov_list" id="Provinces" name="Provinces" />
+            <datalist id="prov_list">
+              <option value="Alberta"></option>
+              <option value="British Columbia"></option>
+              <option value="Manitoba"></option>
+              <option value="New Brunswick"></option>
+              <option value="Newfoundland and Labrador"></option>
+              <option value="Northwest Territories"></option>
+              <option value="Nova Scotia"></option>
+              <option value="Nunavut"></option>
+              <option value="Ontario"></option>
+              <option value="Prince Edward Island"></option>
+              <option value="Quebec"></option>
+              <option value="Saskatchewan"></option>
+              <option value="Yukon"></option>
+            </datalist>
+
+            <br /><br />
+            <span>Reason For Contact:</span>
+            <br />
+            <p id="choice">Job Offer</p>
+            <input
+              type="radio"
+              name="Reason"
+              value="Job Offer"
+              required="true"
+            />
+
+            <p id="choice">School</p>
+            <input type="radio" name="Reason" value="School" required="true" />
+            <p id="choice">Other</p>
+            <input
+              type="radio"
+              name="Reason"
+              value="Other"
+              required="true"
+              onclick="showOther()"
+            />
+            <div id="other_box">
+              <input
+                type="text"
+                name="Reason"
+                class="other_text"
+                placeholder="What is your reason?"
+                style="visibility: hidden"
+              />
+            </div>
+            <script>
+              function showOther() {
+                var otherTextBox = document
+                  .getElementById("other_box")
+                  .querySelector("input");
+                otherTextBox.style.visibility = "visible";
+              }
+            </script>
+
+            <br />
+
+            <span>Click all that apply to you:</span>
+            <br />
+            <input type="checkbox" name="Title" value="student" />
+            <p id="choice">Student</p>
+            <br />
+            <input type="checkbox" name="Title" value="professor" />
+            <p id="choice">Professor</p>
+            <br />
+            <input type="checkbox" name="Title" value="employer" />
+            <p id="choice" p>Employer</p>
+            <br />
+            <br />
+
+            <span>Write a message...</span>
+            <br />
+            <textarea name="Message" class="message_box"> </textarea>
+
+            <br />
+            <input
+              type="submit"
+              id="contact_buttons"
+              value="Contact"
+            />&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" id="contact_buttons" value="Clear" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div id="honesty"></div>
+    </main>
+
+    <!--js files-->
+    <script src="./js/script.js"></script>
+    <script src="./js/aboutme.js"></script>
+    <script src="./js/education.js"></script>
+    <script src="./js/skills.js"></script>
+  </body>
+</html>

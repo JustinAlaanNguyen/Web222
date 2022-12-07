@@ -1,0 +1,282 @@
+/*general*/
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Montserrat;
+}
+
+/*header*/
+header {
+  background-color: black;
+  height: 40vw;
+  display: grid;
+  place-items: center;
+  color: blanchedalmond;
+}
+header h1 {
+  margin-top: 2vw;
+
+  font-size: 2vw;
+}
+#profile_img {
+  margin-top: -1vw;
+  max-width: 23vw;
+  max-height: 25vw;
+
+  border-radius: 2vw;
+}
+.titles {
+  margin-top: -2vw;
+
+  font-size: 1vw;
+}
+button {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 0.5vw;
+  border-radius: 1vw;
+
+  color: rgb(250, 214, 159);
+  background-color: #706c61;
+  font-size: 2vw;
+  font-weight: 800;
+  font-family: Abril Fatface;
+}
+button:hover {
+  color: rgba(250, 214, 159, 0.61);
+  background-color: #706c61c4;
+  cursor: pointer;
+  font-family: Abril Fatface;
+}
+#resume_button {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 0.5vw;
+  border-radius: 1vw;
+
+  color: rgb(250, 214, 159);
+  background-color: #706c61;
+  font-size: 2vw;
+  font-weight: 800;
+  font-family: Abril Fatface;
+}
+
+/*infographic*/
+#infographic {
+  background-color: #bdbdbd;
+  padding-bottom: 16vw;
+  height: fit-content;
+}
+
+.about_me_header {
+  font-size: 2vw;
+
+  max-width: fit-content;
+
+  position: relative;
+  left: 3vw;
+  top: 3vw;
+}
+.about_me_desc {
+  font-size: 1vw;
+
+  max-width: 40vw;
+
+  position: relative;
+  left: 3vw;
+  top: 5vw;
+}
+.basic_header {
+  font-size: 2vw;
+
+  max-width: fit-content;
+
+  position: absolute;
+  left: 55vw;
+  top: 43vw;
+}
+#basic_info {
+  max-width: fit-content;
+
+  font-size: 1vw;
+  position: absolute;
+  left: 55vw;
+  top: 47vw;
+}
+
+/*education*/
+#education {
+  background-color: #757575;
+  padding-top: 1vw;
+  padding-bottom: 3vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education_header {
+  font-weight: 900;
+  font-size: 5vw;
+  color: antiquewhite;
+
+  margin-right: 2vw;
+}
+.education_card {
+  border-style: solid;
+  border-radius: 2vw;
+  border-color: antiquewhite;
+
+  display: inline-block;
+  padding: 1vw;
+  margin: 1vw;
+  max-width: fit-content;
+  max-height: fit-content;
+  background-color: antiquewhite;
+}
+.education_school {
+  font-weight: 900;
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+}
+.education_location {
+  margin: 1vw;
+  font-size: 1vw;
+}
+.education_degree {
+  margin: 1vw;
+  font-size: 1vw;
+}
+.education_graduated {
+  margin: 1vw;
+  font-size: 1vw;
+}
+.education_grade {
+  margin: 1vw;
+  font-size: 1vw;
+}
+.education_honours {
+  margin: 1vw;
+  font-size: 1vw;
+}
+
+/*skills*/
+#skills {
+  background-color: #bdbdbd;
+  padding-top: 1vw;
+  padding-bottom: 3vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills_header {
+  font-weight: 900;
+  font-size: 5vw;
+  color: rgb(250, 214, 159);
+
+  margin-right: 2vw;
+}
+.skill_card {
+  border-style: solid;
+  border-radius: 2vw;
+  border-color: rgb(250, 214, 159);
+
+  display: inline-block;
+  padding: 1vw;
+  margin: 1vw;
+  max-width: 12vw;
+  max-height: fit-content;
+  background-color: rgb(250, 214, 159);
+}
+.skill_name {
+  font-weight: 900;
+  font-size: 1.2vw;
+  margin-bottom: 1vw;
+}
+.skill_desc {
+  font-size: 0.25vw;
+}
+
+/*contact me*/
+#contact_me {
+  background-color: #757575;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+.fieldset {
+  border: 1px solid antiquewhite;
+  max-width: fit-content;
+  margin: auto;
+  padding: 1vw;
+}
+.contact_legend {
+  display: table;
+  position: relative;
+  margin: auto;
+  padding: 1vw 2vw;
+  color: antiquewhite;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+span {
+  font-size: 1.25vw;
+  font-weight: 600;
+}
+
+.input_text {
+  font-size: 1.5vw;
+}
+#Provinces {
+  font-size: 1.5vw;
+}
+
+#choice {
+  font-size: 1vw;
+  display: inline;
+}
+
+.other_text {
+  font-size: 1vw;
+}
+
+.message_box {
+  font-size: 1vw;
+
+  width: 18vw;
+  height: 10vw;
+}
+
+#contact_buttons {
+  font-size: 1vw;
+
+  border-radius: 1vw;
+  padding: 0.25vw;
+}
+
+/*honesty*/
+#honesty {
+  background-color: #bdbdbd;
+  padding-top: 4vw;
+  padding-bottom: 1vw;
+  margin: 0;
+}
+.honesty_header {
+  font-size: 3vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.honesty_desc {
+  font-size: 1vw;
+  margin: 2vw;
+}
+.honesty_date {
+  font-size: larger;
+  font-weight: 700;
+  margin: 2vw;
+}
